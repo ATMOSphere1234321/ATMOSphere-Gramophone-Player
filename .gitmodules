@@ -1,7 +1,7 @@
 [submodule "media3"]
 	path = media3
-	url = https://github.com/nift4/media
+	url = git@github.com:ATMOSphere1234321/media.git
 	branch = gramophone
 [submodule "hificore/src/main/cpp/libusb-cmake"]
 	path = hificore/src/main/cpp/libusb-cmake
-	url = https://github.com/libusb/libusb-cmake
+	url = git@github.com:ATMOSphere1234321/libusb-cmake.git
