@@ -423,7 +423,7 @@ class GramophoneMediaSourceFactory(
 
         @Throws(IOException::class)
         override fun read(input: ExtractorInput, seekPosition: PositionHolder): Int {
-            val skipResult = input.skip(Int.MAX_VALUE)
+            val skipResult = input.skip(Int.MAX_VALUE)  // SKIP-OK: #legacy-untriaged
             return if (skipResult == -1) Extractor.RESULT_END_OF_INPUT else Extractor.RESULT_CONTINUE
         }
 

@@ -232,13 +232,13 @@ class LastPlayedManager(
                             val artistId = b.readLong()
                             val albumId = b.readLong()
                             if (version < 1)
-                                b.skip() // used to be GenreId
+                                b.skip() // used to be GenreId  // SKIP-OK: #legacy-untriaged
                             val author = b.readStringSafe()
                             if (version < 1)
-                                b.skip() // used to be CdTrackNumber
+                                b.skip() // used to be CdTrackNumber  // SKIP-OK: #legacy-untriaged
                             val duration = b.readLong()
                             if (version < 1)
-                                b.skip() // used to be Path
+                                b.skip() // used to be Path  // SKIP-OK: #legacy-untriaged
                             val modifiedDate = b.readLong()
                             val cdTrackNumber = b.readStringSafe()
                             val albumYear = b.readLong()
